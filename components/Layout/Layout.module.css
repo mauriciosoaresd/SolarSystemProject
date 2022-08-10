@@ -1,0 +1,11 @@
+.layout__wrapper {
+    position: relative;
+    scroll-snap-type: y mandatory;
+    background-image: url("/imgs/clean.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 90vh;
+    overflow-y: scroll;
+    height: 100vh;
+    z-index: 3;
+}

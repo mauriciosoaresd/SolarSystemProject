@@ -1,34 +1,116 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<h1 align="center">
+<a href="https://spotiutils.herokuapp.com/">
+  <img style="border-radius: 40px; height: 140px"alt="SpotiUtils" title="SpotiUtils" src="./public/imgs/logo.png" />
+  </a>
+</h1>
 
-First, run the development server:
+<h1 align="center">
+    <a href="https://spotiutils.herokuapp.com/">🔗SolarSystem</a>
+</h1>
 
-```bash
-npm run dev
-# or
-yarn dev
+<p align="center">🚀Website project to spread information about our solar system</p>
+
+<p align="center">
+ <a href="#features">Features</a> •
+ <a href="#setup">Setup</a> • 
+ <a href="#built-with">Built With</a> • 
+ <a href="#author">Author</a>
+</p>
+
+<!-- GIF SHOW CASE MOBILE -->
+<p align="center">
+    <img width="250" style="border-radius: 5px" height="450" src="./README/mobile.gif" alt="Intro">
+</p>
+
+*Read this in other languages: [Portuguese](README.pt.md)*
+
+#### Features
+
+- [x] Solar system introduction card
+- [x] Astros pages
+- [x] Wikipedia API to fetch content
+- [x] Language selection
+    - English
+    - Portuguese
+
+
+## Setup
+
+These instructios will get you a copy of the project up and running on your local machine. 
+
+#### Create database
+
+Follow the instructions to get the Heroku PostgreSQL connection link: [here](https://devcenter.heroku.com/articles/heroku-postgresql).
+
+
+#### Installing
+
+ *If you already have the Node.js and npm installed, you can skip the step below.*
+ 
+
+**Installing Node.js and npm**
+
+To run the App, you'll need to have the Node.js and  npm installed on your machine, if you don't have Node.js and npm installed yet, you can follow the following steps to install both:
+
+ * Installing Node.js and npm on macOS and Windows environment: [here](https://nodejs.org/en/download/).
+ * Installing Node.js and npm on Ubuntu environment: [here](https://tecadmin.net/install-latest-nodejs-npm-on-ubuntu/).
+
+ **Fill .env file with your variables**
+```
+DATABASE_URL=<heroku postgresql connection URI>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Running the App
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+**Cloning the repository**
+```
+$ git clone https://github.com/mauriciosoaresd/SolarSystemProject && cd SolarSystemProject
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**Installing project dependencies**
+```
+$ npm install
+```
 
-## Learn More
+After cloning the repository and enter on the directory, you just need to run the following commands:
 
-To learn more about Next.js, take a look at the following resources:
+**Filling PostgreSQL database**
+```
+node ./database/index.js
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Building Project**
+```
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Running the App**
+```
+$ npm start
+```
 
-## Deploy on Vercel
+You can access server by the port:3000 - <http://localhost:3000>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Built With
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Heroku](https://www.heroku.com/)
+- [Sequelize](https://sequelize.org/)
+- [Wikipedia API wrapper](https://www.npmjs.com/package/wikipedia)
+
+### Author
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/55855981?v=4" width="100px;" alt=""/>
+
+ <sub><b>Maurício Domingues</b></sub>
+
+ [![Gmail badge](https://img.shields.io/badge/-mauriciosoaresd@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white&link=mailto:mauriciosoaresd@gmail.com)](mailto:mauriciosoaresd@gmail.com) [![Linkedin Badge](https://img.shields.io/badge/-Maurício-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mauriciosdomingues/)](https://www.linkedin.com/in/mauriciosdomingues/) 
+
+
+
+## License
+
+This project is under the license [MIT](./LICENSE).

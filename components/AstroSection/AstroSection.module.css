@@ -1,0 +1,18 @@
+.section__wrapper {  
+    margin: 15px auto 60px auto;
+    padding-top: 90px;
+    max-width: 1000px;
+    line-break: anywhere;
+    color: white;
+    scroll-snap-align: start;
+}
+
+.section__wrapper > div {
+    margin-top: 20px;
+}
+
+.astroInfo__div {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 1.2rem;
+}

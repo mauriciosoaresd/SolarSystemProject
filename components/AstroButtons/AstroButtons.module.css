@@ -1,0 +1,16 @@
+.astroButtons__wrapper {
+    margin: auto;
+}
+
+.astroButton {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    transform: scale(.7);
+    transition: all .1s ease-in-out;
+  }
+  
+  .astroButton:hover {
+    transform: scale(.9);
+    cursor: pointer;
+  }

@@ -2,9 +2,15 @@ html,
 body {
   padding: 0;
   margin: 0;
+  margin-top: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: linear-gradient(rgb(30, 0, 68), #000000);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: fit-content;
 }
+
 
 a {
   color: inherit;
@@ -13,4 +19,84 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+main {
+  padding-top: 15px;
+  scroll-snap-align: start;
+}
+
+p {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.contentBg {
+  border-radius: 8px;
+  background: rgba(199, 199, 199, 0.219);
+}
+
+.backdropBlur {
+  backdrop-filter: blur(8px);
+}
+
+.sun {
+  background-image: url('/imgs/sun.png');
+  background-size: cover;
+  padding: 10px;
+}
+
+.venus {
+  background-image: url('/imgs/venus.png');
+  background-size: cover;
+}
+
+.mercury {
+  background-image: url('/imgs/mercury.png');
+  background-size: cover;
+}
+
+.earth {
+  background-image: url('/imgs/earth.png');
+  background-size: cover;
+}
+
+.moon {
+  background-image: url('/imgs/moon.png');
+  background-size: cover;
+}
+
+.mars {
+  background-image: url('/imgs/mars.png');
+  background-size: cover;
+}
+
+.jupiter {
+  background-image: url('/imgs/jupiter.png');
+  background-size: cover;
+}
+
+.saturn {
+  background-image: url('/imgs/saturn.png');
+  background-size: cover;
+}
+
+.uranus {
+  background-image: url('/imgs/uranus.png');
+  background-size: cover;
+}
+
+
+.neptune {
+  background-image: url('/imgs/neptune.png');
+  background-size: cover;
+}
+
+.pluto {
+  background-image: url('/imgs/pluto.png');
+  background-size: cover;
+}
+
+footer {
+  scroll-snap-align: end;
 }
