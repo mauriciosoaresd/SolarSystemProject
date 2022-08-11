@@ -11,7 +11,6 @@ const AstroSection = ({ data }) => {
                 <div className={styles.astroInfo__div}>
                     <p>{data.info}</p>
                 </div>
-                <p> <Link href={data.wiki}><a target="_blank">Read more</a></Link></p>
                 <p><i><Link href={data.wiki}><a target="_blank">{data.wiki}</a></Link></i></p>
             </div>
         </article>

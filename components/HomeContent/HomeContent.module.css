@@ -1,19 +1,14 @@
 .homeContent__wrapper {
     scroll-snap-align: start;
 }
-.homeContent__wrapper:first-child {
-    margin-top: 60px;
-}
 
 .homeContent__div {
     background: rgb(62, 0, 155);
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-
-}
-.homeContent__div {
     word-break: break-all;
+
 }
 
 .homeContent__text__div {
@@ -23,10 +18,18 @@
     text-align: center;
 }
 
-.homeContent__text__div>p {
+.homeContent__text__div > p {
     display: -webkit-box;
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 1200px) {
+    .homeContent__wrapper {
+        scroll-snap-align: start;
+        scroll-margin: -190px;
+    }
+    
 }

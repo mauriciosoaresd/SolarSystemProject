@@ -1,6 +1,10 @@
 // Run it to fill database index.js
+
 (async () => {
     const fs = require('fs');
+    const path = require('path')
+
+    require('dotenv').config({path: path.resolve(__dirname, '../.env.local')})
 
     const astros = require('./data/astros.json')
     const api = require('./api')
@@ -15,7 +19,6 @@
 
     try {
         // force: true - Recreates and fills tables
-
         // const db = await database.sync({ force: true })
         const db = await database.sync()
 

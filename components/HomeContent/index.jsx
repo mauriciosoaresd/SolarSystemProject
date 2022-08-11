@@ -15,7 +15,6 @@ const HomeContent = ({ data }) => {
                     <Image src="/imgs/solarSystem.png" layout="intrinsic" width={300} height={300} />
                     <p>{data.info}</p>
                 </div>
-                <Link href={data.wiki}>Read more</Link>
                 <p><i><Link href={data.wiki}><a target="_blank">{data.wiki}</a></Link></i></p>
 
 

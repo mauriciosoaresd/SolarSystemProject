@@ -56,9 +56,9 @@ To run the App, you'll need to have the Node.js and  npm installed on your machi
  * Installing Node.js and npm on macOS and Windows environment: [here](https://nodejs.org/en/download/).
  * Installing Node.js and npm on Ubuntu environment: [here](https://tecadmin.net/install-latest-nodejs-npm-on-ubuntu/).
 
- **Fill .env file with your variables**
+ **Fill .env.local file with your variables**
 ```
-DATABASE_URL=<heroku postgresql connection URI>
+DATABASE_URL=<postgresql connection URI>
 ```
 
 
