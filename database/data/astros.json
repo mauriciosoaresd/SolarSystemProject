@@ -1,0 +1,16 @@
+{
+    "astros": [
+      { "en_name": "Solar System", "pt_name": "Sistema Solar", "en_wiki":"Solar_System", "pt_wiki": "Sistema_Solar" },
+      { "en_name": "Sun", "pt_name": "Sol","en_wiki": "Sun", "pt_wiki": "Sol" },
+      { "en_name": "Venus", "pt_name": "Venus", "en_wiki": "Venus", "pt_wiki": "Venus_(planeta)" },
+      { "en_name": "Mercury", "pt_name": "Mercúrio", "en_wiki": "Mercury_(planet)", "pt_wiki": "Mercúrio_(planeta)" },
+      { "en_name": "Earth", "pt_name": "Terra", "en_wiki": "Earth", "pt_wiki": "Terra" },
+      { "en_name": "Moon", "pt_name": "Lua", "en_wiki": "Moon", "pt_wiki": "Lua" },
+      { "en_name": "Mars", "pt_name": "Marte", "en_wiki": "Mars", "pt_wiki": "Marte_(planeta)" },
+      { "en_name": "Jupiter", "pt_name": "Jupiter", "en_wiki": "Jupiter", "pt_wiki": "Júpiter_(planeta)" },
+      { "en_name": "Saturn", "pt_name": "Saturno", "en_wiki": "Saturn", "pt_wiki": "Saturno_(planeta)" },
+      { "en_name": "Uranus", "pt_name": "Urano", "en_wiki": "Uranus", "pt_wiki": "Urano_(planeta)" },
+      { "en_name": "Neptune", "pt_name": "Netuno", "en_wiki": "Neptune", "pt_wiki": "Netuno_(planeta)" },
+      { "en_name": "Pluto", "pt_name": "Plutão", "en_wiki": "Pluto", "pt_wiki": "Plutao" }
+    ]
+  }
