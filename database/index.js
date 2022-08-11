@@ -15,9 +15,9 @@
 
     try {
         // force: true - Recreates and fills tables
+
         // const db = await database.sync({ force: true })
         const db = await database.sync()
-
 
         // Fill Astro Table
         const astrosArr = astros.astros.map(obj => {
@@ -30,7 +30,8 @@
         })
         AstroModel.bulkCreate(astrosArr).catch(e => console.error(e))
 
-        // Fetch wiki data
+
+        // Fetch wiki data pt/en
         const ptArr = astros.astros.map(obj => {
             return { name: obj.pt_name, wiki: obj.pt_wiki }
         })
@@ -45,7 +46,8 @@
                 En_Info.bulkCreate(x.enArr)
                 Pt_Info.bulkCreate(x.ptArr)
             })
-
+        
+        // Fill Info tables
         const createWikiArr = async (enData, ptData) => {
             const enArr = await Promise.all(enData.map(async (astro) => await AstroModel.findOne({ where: { en_name: astro.name } })
                 .then(ast => { return { id: ast.id, info: astro.intro } })
