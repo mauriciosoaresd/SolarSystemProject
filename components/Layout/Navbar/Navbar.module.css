@@ -18,6 +18,17 @@
 }
 
 .languagesDiv__wrapper {
+    display: flex;
+    width: 50px;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.languagesDiv__wrapper > * {
+    transition: transform .2s;
+}
+
+.languagesDiv__wrapper > *:hover {
+    transform: scale(1.5);
 }
