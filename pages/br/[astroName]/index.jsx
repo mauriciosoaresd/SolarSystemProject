@@ -5,7 +5,7 @@ const AstroDetails = (props) => {
 }
 
 export const getStaticPaths = async () => {
-    const data = await fetch(`http://localhost:3000/api/br/getPaths`, {
+    const data = await fetch(`${process.env.DOMAIN}api/br/getPaths`, {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (ctx) => {
-    const data = await fetch(`http://localhost:3000/api/br/getInfos/${ctx.params.astroName}`, {
+    const data = await fetch(`${process.env.DOMAIN}api/br/getInfos/${ctx.params.astroName}`, {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'

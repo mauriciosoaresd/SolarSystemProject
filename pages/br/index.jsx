@@ -13,7 +13,7 @@ const Home = ({ astros, solarSystem }) => {
 }
 
 export const getStaticProps = async (context) => {
-  const data = await fetch(`http://localhost:3000/api/br/getAstros`, {
+  const data = await fetch(`${process.env.DOMAIN}api/br/getAstros`, {
     method: "GET",
     headers: {
       'Content-Type': 'application/json'
