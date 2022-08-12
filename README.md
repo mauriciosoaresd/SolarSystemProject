@@ -1,12 +1,12 @@
 
 <h1 align="center">
-<a href="https://spotiutils.herokuapp.com/">
-  <img style="border-radius: 40px; height: 140px"alt="SpotiUtils" title="SpotiUtils" src="./public/imgs/logo.png" />
+<a href="https://solar-system-project.vercel.app/">
+  <img style="border-radius: 40px; height: 140px"alt="Solar System Project" title="Solar System Project" src="./public/imgs/logo.png" />
   </a>
 </h1>
-<!-- MUDAR HREFS -->
+
 <h1 align="center">
-    <a href="https://spotiutils.herokuapp.com/">🔗SolarSystem</a>
+    <a href="https://solar-system-project.vercel.app/">🔗SolarSystem</a>
 </h1>
 
 <p align="center">🚀Website project to spread information about our solar system</p>
@@ -29,7 +29,7 @@
 
 - [x] Solar system introduction card
 - [x] Astros pages
-- [x] Wikipedia API to fetch content
+- [x] WikipediaAPI to fetch content
 - [x] Language selection
     - English
     - Portuguese
@@ -97,10 +97,13 @@ You can access server by the port:3000 - <http://localhost:3000>
 
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
 - [Bootstrap](https://getbootstrap.com/)
+- [Vercel](https://vercel.com/)
 - [Heroku](https://www.heroku.com/)
 - [Sequelize](https://sequelize.org/)
 - [Wikipedia API wrapper](https://www.npmjs.com/package/wikipedia)
+
 
 ### Author
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/55855981?v=4" width="100px;" alt=""/>
