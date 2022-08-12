@@ -8,7 +8,7 @@ const Jumbotron = ({ data, astros }) => {
     return (
         <div className={`text-light text-center`}>
 
-            <div className={`jumbotron jumbotron-fluid ${styles.jumbotron} backdropBlur contentBg`}>
+            <div className={`${styles.jumbotron} jumbotron jumbotron-fluid backdropBlur contentBg`}>
                 <div className="container">
                     <h1 className="display">{data.jumbotronTitle}</h1>
                     <p className="lead">{data.jumbotronText}</p>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './HomeContent.module.css'
 
-const HomeContent = ({ data }) => {
+const HomeContent = ({ data, wikiText }) => {
     return (
         <div className={styles.homeContent__wrapper}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -15,7 +15,7 @@ const HomeContent = ({ data }) => {
                     <Image src="/imgs/solarSystem.png" layout="intrinsic" width={300} height={300} />
                     <p>{data.info}</p>
                 </div>
-                <p><i><Link href={data.wiki}><a target="_blank">{data.wiki}</a></Link></i></p>
+                <p>{wikiText}<i><Link href={data.wiki}><a target="_blank">{data.wiki}</a></Link></i></p>
 
 
             </div>

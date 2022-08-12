@@ -5,9 +5,13 @@ const AstroDetails = (props) => {
 }
 
 export const getStaticPaths = async () => {
-    const AstroModel = require('../../database/models/Astro')
+    const data = await fetch(`http://localhost:3000/api/en/getPaths`, {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(async (res) => res.json())
 
-    const data = await AstroModel.findAll({ raw: true, attributes: ["en_name"] })
     return {
         fallback: false,
         paths: data.map((astro) => (
@@ -17,27 +21,12 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (ctx) => {
-    const AstroModel = require('../../database/models/Astro')
-    const En_Info = require('../../database/models/En_Info')
-
-    const data = await AstroModel.findOne({
-        raw: true,
-        where: { "en_name": ctx.params.astroName },
-        attributes: ['id', 'en_name', 'en_wiki']
-    }).then(async (data) => {
-        let info = await En_Info.findOne({
-            raw: true,
-            where: { "id": data.id },
-            attributes: ['info']
-        })
-
-        return { 
-            id: data.en_name.toLowerCase(),
-            name: data.en_name,
-            wiki: `https://en.wikipedia.org/wiki/${data.en_wiki}`,
-            ...info
+    const data = await fetch(`http://localhost:3000/api/en/getInfos/${ctx.params.astroName}`, {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json'
         }
-    })
+    }).then(async (res) => res.json())
 
     return {
         props: { astroData: data }
