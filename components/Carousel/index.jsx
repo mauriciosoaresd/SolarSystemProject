@@ -1,7 +1,6 @@
 import styles from './Carousel.module.css'
 
 const Carousel = ({id}) => {
-    // TROCAR CAROUSEL
     return (
         <div id={`carouselExampleControls${id}`} className={`${styles.carousel} carousel slide`} data-bs-ride="carousel">
             <div className="carousel-inner">

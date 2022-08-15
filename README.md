@@ -18,9 +18,8 @@
  <a href="#author">Author</a>
 </p>
 
-<!-- GIF SHOW CASE MOBILE -->
 <p align="center">
-    <img width="250" style="border-radius: 5px" height="450" src="./README/mobile.gif" alt="Intro">
+    <img width="250" style="border-radius: 5px" height="450" src="./mobile.gif" alt="Intro">
 </p>
 
 *Read this in other languages: [Portuguese](README.pt.md)*
